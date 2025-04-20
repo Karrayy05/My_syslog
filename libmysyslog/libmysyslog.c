@@ -2,12 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-
-#define DEBUG 0
-#define INFO 1
-#define WARN 2
-#define ERROR 3
-#define CRITICAL 4
+#include "libmysyslog.h"
 
 int mysyslog(const char* msg, int level, int driver, int format, const char* path) {
 	// Реализация функции журналирования
